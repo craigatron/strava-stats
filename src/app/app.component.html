@@ -1,0 +1,17 @@
+<div class="progress-bar-holder">
+    <div class="header">Craig's 2022 Stats</div>
+    <div class="progress">
+        <img class="progress-img" width="50" src="/assets/craiglol.png" [style.left]="craigFaceX"
+            [class.flipped]="flipCraigFace">
+        <progress [value]="totalMiles?.toFixed(0)" [max]="targetMiles">foo</progress>
+    </div>
+    <div class="stats">
+        <span>{{ totalMilesStr }} / {{ targetMiles }} miles</span>
+    </div>
+</div>
+<div class="footer">
+    another silly Craig Martek project | updated {{ lastUpdated }} | <a href="https://www.strava.com/athletes/3451705"
+        target="_blank">Follow me on
+        Strava!</a> | <a href="https://github.com/craigatron/strava-tools" target="_blank">GitHub</a>
+</div>
+<div id="map"></div>
